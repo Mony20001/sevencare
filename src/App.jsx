@@ -2,15 +2,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 function App() {
   const photos = [
-    { src: './src/images/white.png', alt: 'White' },
-    { src: './src/images/pink.png', alt: 'Pink' },
-    { src: './src/images/yellow.png', alt: 'Yellow' },
-    { src: './src/images/green.png', alt: 'Green' },
+    { src: './public/images/white.png', alt: 'White' },
+    { src: './public/images/pink.png', alt: 'Pink' },
+    { src: './public/images/yellow.png', alt: 'Yellow' },
+    { src: './public/images/green.png', alt: 'Green' },
   ];
   const products = [
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -18,7 +18,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -26,7 +26,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -34,7 +34,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -42,7 +42,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -50,7 +50,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -58,7 +58,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -66,7 +66,7 @@ function App() {
     },
     {
       dis: '-16%',
-      img: './src/images/image.png',
+      img: './public/images/image.png',
       name: 'Madagascar Centella Ampoule',
       type: 'Serum',
       des: 'កាត់បន្ថយមុន ពង្រឹងរបាំងការពារស្បែក ផ្តល់សំណើម សម្រួល និងកាត់បន្ថយការរលាក',
@@ -110,7 +110,7 @@ function App() {
       </header>
       <div className="flex items-start gap-8 ml-10">
         <div className="h-[500px] w-[500px] bg-[#FAF7F2]/90 rounded-full overflow-hidden flex justify-center items-center shrink-0 mt-15">
-          <img className="h-full object-cover" src="./src/images/hero.png" alt="Beauty" />
+          <img className="h-full object-cover" src="./public/images/hero.png" alt="Beauty" />
         </div>
         <div className="w-[500px] h-[500px] overflow-hidden relative shrink-0 ml-50">
           <div className="flex w-[400%] h-full animate-slide">
