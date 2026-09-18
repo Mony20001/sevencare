@@ -30,12 +30,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link to="/about" className="hover:text-white transition-colors">
                   អំពីយើង (About Us)
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link to="/contact" className="hover:text-white transition-colors">
                   ទំនាក់ទំនង (Contact)
                 </Link>
               </li>

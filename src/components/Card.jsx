@@ -1,13 +1,19 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { products } from "../Data/Products";
+import { useCart } from "../Data/useCart";
 
 const Card = ({ category }) => {
   const navigate = useNavigate();
+  const { addToCart } = useCart(); // ហៅ function addToCart
 
   const filteredProducts = category
     ? products.filter((product) => product.category === category)
     : products;
+
+  const handleAddToCart = (e, product) => {
+    e.stopPropagation(); // ការពារកុំឱ្យវា Jump ទៅ Navigate Page Detail
+    addToCart(product);   // បញ្ជូន Product ទៅ Cart Context
+  };
 
   return (
     <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 sm:gap-6">
@@ -31,6 +37,8 @@ const Card = ({ category }) => {
               loading="lazy"
             />
           </div>
+
+          {/* Content Area */}
           <div className="p-4 flex flex-col flex-grow justify-between">
             <div>
               <p className="text-stone-400 text-xs font-semibold uppercase tracking-wider">
@@ -43,9 +51,24 @@ const Card = ({ category }) => {
                 {product.des}
               </p>
             </div>
-            <p className="text-red-700 font-bold text-lg mt-3">
-              {product.price}
-            </p>
+
+            {/* Price & Add to Cart Action */}
+            <div className="mt-4 flex items-center justify-between">
+              <p className="text-red-700 font-bold text-lg">
+                {product.price}
+              </p>
+
+              <button
+                type="button"
+                onClick={(e) => handleAddToCart(e, product)}
+                className="flex items-center space-x-1.5 bg-green-900 hover:bg-stone-800 text-white text-xs font-medium px-3 py-2 rounded-lg transition-colors shadow-sm active:scale-95"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span>ថែមក្នុងកន្ត្រក</span>
+              </button>
+            </div>
           </div>
         </div>
       ))}

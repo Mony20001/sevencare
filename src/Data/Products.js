@@ -252,3 +252,9 @@ export const Slide = [
     { src: '/images/yellow.png', alt: 'Yellow' },
     { src: '/images/green.png', alt: 'Green' },
 ];
+
+export const values = [
+  { title: "Thoughtful formulas", description: "We choose everyday skincare essentials that feel simple, gentle, and effective." },
+  { title: "Care for every routine", description: "Whether your routine has one step or five, our products are made to fit into real life." },
+  { title: "Confidence in the details", description: "Clear product information helps you choose what is right for your skin." },
+];

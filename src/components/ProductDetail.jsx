@@ -1,10 +1,11 @@
-import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { products } from "../Data/Products";
+import { useCart } from "../Data/useCart";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { addToCart } = useCart();
 
   // ស្វែងរក product តាម id ពី URL
   const product = products.find((item) => item.id === parseInt(id));
@@ -43,7 +44,7 @@ const ProductDetail = () => {
           <p className="text-stone-600 leading-relaxed text-sm">{product.des}</p>
           <div className="text-2xl font-bold text-stone-900 mt-2">{product.price}</div>
           
-          <button className="mt-4 w-full py-3 bg-stone-800 text-white font-medium rounded-xl hover:bg-stone-900 transition-colors">
+          <button onClick={() => addToCart(product)} className="mt-4 w-full py-3 bg-stone-800 text-white font-medium rounded-xl hover:bg-stone-900 transition-colors">
             ថែមចូលកន្ត្រក
           </button>
         </div>
