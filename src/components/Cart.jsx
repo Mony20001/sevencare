@@ -12,12 +12,12 @@ const Cart = () => {
 
   if (cartItems.length === 0) {
     return (
-      <main className="flex flex-1 items-center justify-center bg-stone-50 px-4 py-16">
+      <main className="flex flex-1 items-center justify-center bg-slate-50 px-4 py-16">
         <div className="max-w-md text-center">
-          <h1 className="text-3xl font-serif font-semibold text-stone-800">Your cart is empty</h1>
-          <p className="mt-3 text-stone-500">Add products to see them here.</p>
+          <h1 className="text-3xl font-serif font-semibold text-stone-800">នៅក្នុងកន្រ្ទកទទេ</h1>
+          <p className="mt-3 text-stone-500">បន្ថែមផលិតផលដើម្បីមើលឃើញ</p>
           <Link to="/Products1" className="mt-6 inline-block rounded-lg bg-stone-800 px-5 py-3 text-sm font-medium text-white hover:bg-stone-900">
-            Continue shopping
+            ចូលទៅកាន់ផលិតផល
           </Link>
         </div>
       </main>
@@ -25,7 +25,7 @@ const Cart = () => {
   }
 
   return (
-    <main className="flex-1 bg-stone-50 px-4 py-10 sm:px-6 lg:px-10">
+    <main className="flex-1 bg-slate-50 px-4 py-10 sm:px-6 lg:px-10">
       <div className="mx-auto max-w-5xl">
         <h1 className="text-3xl font-serif font-semibold text-stone-800">ពិនិត្យទំនិញ</h1>
         <div className="mt-7 grid gap-6 lg:grid-cols-[1fr_320px]">

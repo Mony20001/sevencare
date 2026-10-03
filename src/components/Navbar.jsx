@@ -33,7 +33,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-stone-200/60 transition-all">
+    <header className="sticky top-0 z-50 bg-slate-50/90 backdrop-blur-md border-b border-stone-200/60 transition-all">
       <div className="max-w-10xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
         <nav className="hidden md:flex items-center space-x-8 text-sm text-stone-700 font-medium">
           <Link to="/" className="hover:text-stone-900 transition">ទំព័រដើម</Link>
@@ -152,7 +152,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden bg-[#FAF7F2] border-b border-stone-200/60 px-6 pt-2 pb-6 space-y-4">
+        <div className="md:hidden bg-slate-50 border-b border-stone-200/60 px-6 pt-2 pb-6 space-y-4">
           <nav className="flex flex-col space-y-3 text-base text-stone-700 font-medium">
             <Link to="/" onClick={() => setIsMenuOpen(false)} className="hover:text-stone-900 transition py-1">ទំព័រដើម</Link>
             <Link to="/Products1" onClick={() => setIsMenuOpen(false)} className="hover:text-stone-900 transition py-1">ផលិតផល</Link>

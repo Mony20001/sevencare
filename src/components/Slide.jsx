@@ -23,7 +23,7 @@ const Slide = () => {
             {/* Background Glows */}
             <div className="absolute top-5 left-1/4 w-36 sm:w-72 h-36 sm:h-72 bg-amber-200/40 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-5 right-1/4 w-48 sm:w-96 h-48 sm:h-96 bg-rose-200/30 rounded-full blur-3xl pointer-events-none" />
-            
+
             <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center z-10">
                 {/* Text Content Block */}
                 <div className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 sm:space-y-6 text-stone-700 font-medium">
@@ -31,7 +31,7 @@ const Slide = () => {
                         <span className="w-2 h-2 rounded-full bg-amber-600 animate-pulse" />
                         ផលិតផលថ្មីៗ
                     </span>
-                    
+
                     <h1 className="text-2xl xs:text-3xl sm:text-5xl lg:text-6xl font-serif font-medium leading-tight sm:leading-[1.15] tracking-tight">
                         ថែសម្រស់រាល់ថ្ងៃ
                         <span className="block text-amber-900 mt-1 sm:mt-0 text-3xl sm:text-5xl lg:text-6xl">
@@ -44,18 +44,23 @@ const Slide = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 w-full sm:w-auto pt-2">
-                        <button 
-                            onClick={() => navigate('/Products1')} 
+                        <button
+                            onClick={() => navigate('/Products1')}
                             className="w-full sm:w-auto px-8 py-3.5 bg-[#2C2A29] text-white rounded-full font-medium text-sm hover:bg-neutral-800 transition-all shadow-md hover:shadow-lg transform active:scale-95 cursor-pointer"
                         >
                             ស្វែងរកផលិតផល
                         </button>
-                        <button className="w-full sm:w-auto px-8 py-3.5 bg-transparent text-[#2C2A29] rounded-full font-medium text-sm border border-[#2C2A29]/20 hover:bg-[#2C2A29]/5 transition-all">
+                        <a
+                            href="https://t.me/Ramony19"
+                            target="_top"
+                            rel="noopener noreferrer"
+                            className="inline-block w-full text-center sm:w-auto px-8 py-3.5 bg-transparent text-[#2C2A29] rounded-full font-medium text-sm border border-[#2C2A29]/20 hover:bg-[#2C2A29]/5 transition-all"
+                        >
                             ទំនាក់ទំនង
-                        </button>
+                        </a>
                     </div>
                 </div>
-                
+
                 {/* Images / Slider Block */}
                 <div className="lg:col-span-6 flex items-center justify-center gap-2 sm:gap-6 w-full mt-4 lg:mt-0">
                     {/* Left Static Image */}
@@ -83,7 +88,7 @@ const Slide = () => {
                                 </div>
                             ))}
                         </div>
-                        
+
 
                     </div>
                 </div>

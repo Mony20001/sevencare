@@ -14,7 +14,7 @@ const Checkout = () => {
 
   if (cartItems.length === 0) {
     return (
-      <main className="flex flex-1 items-center justify-center bg-stone-50 px-4 py-16">
+      <main className="flex flex-1 items-center justify-center bg-slate-50 px-4 py-16">
         <div className="max-w-md text-center font-medium">
           <h1 className="font-serif text-3xl font-semibold text-stone-800">មិនមានការបង់ប្រាក់</h1>
           <p className="mt-3 text-stone-500">ដាក់ឥវ៉ាន់ចូលកន្រ្ទកដើម្បីទូទាត់ប្រាក់</p>
@@ -25,7 +25,7 @@ const Checkout = () => {
   }
 
   return (
-    <main className="flex-1 bg-stone-50 px-4 py-10 sm:px-6 lg:px-10 font-medium">
+    <main className="flex-1 bg-slate-50 px-4 py-10 sm:px-6 lg:px-10 font-medium">
       <div className="mx-auto max-w-4xl">
         <Link to="/cart" className="text-sm text-stone-600 transition hover:text-stone-900">← ត្រឡប់ក្រោយ</Link>
         <div className="mt-5 grid overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm lg:grid-cols-[1fr_0.9fr]">

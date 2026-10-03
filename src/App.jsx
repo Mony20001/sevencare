@@ -33,7 +33,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
-        <div className="min-h-screen flex flex-col bg-stone-50 text-stone-800 transition-colors duration-200">
+        <div className="min-h-screen flex flex-col bg-slate-50 text-stone-800 transition-colors duration-200">
           <Navbar
             theme={theme}
             onToggleTheme={() => setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"))}

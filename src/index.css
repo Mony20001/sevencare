@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+html,
+body,
+#root {
+  background: #f8fafc;
+}
+
 html.dark {
   color-scheme: dark;
 }
@@ -16,6 +22,7 @@ html.dark header {
 html.dark .bg-stone-50,
 html.dark .bg-stone-100,
 html.dark .bg-gray-50,
+html.dark .bg-slate-50,
 html.dark .bg-\[\#FAF7F2\] {
   background-color: #1c1917 !important;
 }
